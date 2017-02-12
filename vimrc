@@ -1,6 +1,6 @@
 " Easy-Vimrc.template
-" Author: <philosoph@yeah.net>
-" GitHub: philosophos
+" Author: philosophos<philosoph@yeah.net>
+" GitHub: https://github.com/philosophos/easy-vimrc
 
 au BufWritePost $MYVIMRC source $MYVIMRC |" 让配置变更立即生效
 
@@ -8,6 +8,31 @@ set t_Co=256
 set background=dark "dark/light
 colorscheme solarized
 
+" 目录 移动光标到该行字符上，按*键即可跳转到对应配置处；Ctrl+o跳转回来
+"file文件
+"history&undo
+"read&write
+"backup备份文件
+"swapfile交换文件
+"format&coding格式&编码
+"view视图
+"linebreak换行
+"search搜索
+"indent&tab缩进&制表符
+"fold折叠
+"scroll滚屏
+"cursor光标
+"highlight高亮
+"the custom color configuration自定义色彩设置
+"statusline状态栏
+" 改变默认快捷键
+" 标签页操作
+" 导入vim插件管理文件
+" 编辑新文件时读入样板
+" 把整个缓冲区写回到文件前更改时间戳
+" 一键编译运行
+" 环境保存
+" **************************************************************
 "the table align with plugin tabular
 "###################################################################################################
 "file文件
@@ -83,7 +108,7 @@ filetype indent plugin on
 "set spelllang+=         |"spl  ;en                            ;拼写检查使用的语言
 "set spellsuggest        |"sps  ;best                          ;提供拼写校正建议的方法
 
-"换行
+"linebreak换行
 "set wrap                |"     ;_on                           ;自动换行
 "set wrapmargin          |"wm   ;0                             ;使 (硬) 回绕开始的从右侧起算的字符数
 "set breakat=-           |"brk  ;" ^I!@*-+;:,./?"              ;可以在此断行的字符
@@ -217,6 +242,7 @@ nnoremap ; :
 nnoremap U <C-r>|" easier redo
 nnoremap + zo
 nnoremap - zc
+ noremap <C-\> :vsplit 
  noremap <leader><F1> :vert help 
 nnoremap <silent><leader>/ :nohls<CR>
 "Ctrl-a行首 Ctrl-e行尾
@@ -248,11 +274,11 @@ noremap <leader>tl :tablast<CR>
 noremap <leader>tj :tabnext<CR>
 noremap <leader>tk :tabprev<CR>
 " 新建/关闭标签页
-nnoremap <C-t> :tab 
-inoremap <C-t> <Esc>:tab 
-noremap <leader>te :tabedit 
+nnoremap <C-t> :tabedit 
+inoremap <C-t> <Esc>:tabedit 
+noremap <leader>tb :tab 
 noremap <leader>td :tabclose<CR>
-noremap <leader>tm :tabm<CR>
+noremap <leader>tm :tabm 
 " Toggles between the active and last active tab
 let g:last_active_tab = 1
 nnoremap <silent> <leader>tt :execute 'tabnext ' . g:last_active_tab<CR>
