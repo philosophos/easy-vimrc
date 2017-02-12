@@ -37,50 +37,50 @@ python模块可用pip安装
   
 ####自定义快捷键  
   
-Space                   &emsp;&emsp; 全局快捷键的前缀，即leader  
-,                       &emsp;&emsp; 局部快捷键的前缀，localleader  
-;                       &emsp;&emsp; 从普通模式进入命令模式  
-U                       &emsp;&emsp; 取消上一次undo  
-+                       &emsp;&emsp; 打开折叠  
--                       &emsp;&emsp; 关闭折叠  
-<C-\> {file}            &emsp;左右分屏并在新窗口打开{file}  
-<Space><F1> :vert help  &emsp;左右分屏并在新窗口打开help  
-<Space>/                &emsp;取消搜索结果高亮  
+Space                   &emsp;全局快捷键的前缀，即leader  
+,                       &emsp;&emsp;局部快捷键的前缀，localleader  
+;                       &emsp;&emsp;从普通模式进入命令模式  
+U                       &emsp;&emsp;取消上一次undo  
+\+                       &emsp;&emsp;打开折叠  
+\-                       &emsp;&emsp;关闭折叠  
+\<C-\> {file}            &emsp;左右分屏并在新窗口打开{file}  
+\<leader>\<F1> :vert help  &emsp;左右分屏并在新窗口打开help  
+\<leader\>/                &emsp;取消搜索结果高亮  
   
 ######光标移动  
-<C-a>                    &emsp;&emsp;光标移到行首  
-<C-e>                    &emsp;&emsp;光标移到行尾  
-<C-h>                    &emsp;&emsp;光标移到左边窗口  
-<C-j>                    &emsp;&emsp;光标移到下边窗口  
-<C-k>                    &emsp;&emsp;光标移到上边窗口  
-<C-l>                    &emsp;&emsp;光标移到右边窗口  
+C-a                    &emsp;&emsp;光标移到行首  
+C-e                    &emsp;&emsp;光标移到行尾  
+C-h                    &emsp;&emsp;光标移到左边窗口  
+C-j                    &emsp;&emsp;光标移到下边窗口  
+C-k                    &emsp;&emsp;光标移到上边窗口  
+C-l                    &emsp;&emsp;光标移到右边窗口  
   
 ######标签页操作  
 切换标签页  
-<Space>1                &emsp;&emsp;第1个标签页  
-<Space>2                &emsp;&emsp;第2个标签页  
-<Space>3                &emsp;&emsp;第3个标签页  
-<Space>4                &emsp;&emsp;第4个标签页  
-<Space>5                &emsp;&emsp;第5个标签页  
-<Space>6                &emsp;&emsp;第6个标签页  
-<Space>7                &emsp;&emsp;第7个标签页  
-<Space>8                &emsp;&emsp;第8个标签页  
-<Space>9                &emsp;&emsp;第9个标签页  
-<Space>0                &emsp;&emsp;第10个标签页  
-<Space>th               &emsp;&emsp;第一个标签页  
-<Space>tl               &emsp;&emsp;最后一个标签页  
-<Space>tj               &emsp;&emsp;上一个标签页  
-<Space>tk               &emsp;&emsp;下一个标签页  
-<Space>tt               &emsp;&emsp;上一个活跃的标签页  
+\<leader>1                &emsp;&emsp;第1个标签页  
+\<leader>2                &emsp;&emsp;第2个标签页  
+\<leader>3                &emsp;&emsp;第3个标签页  
+\<leader>4                &emsp;&emsp;第4个标签页  
+\<leader>5                &emsp;&emsp;第5个标签页  
+\<leader>6                &emsp;&emsp;第6个标签页  
+\<leader>7                &emsp;&emsp;第7个标签页  
+\<leader>8                &emsp;&emsp;第8个标签页  
+\<leader>9                &emsp;&emsp;第9个标签页  
+\<leader>0                &emsp;&emsp;第10个标签页  
+\<leader\>th               &emsp;&emsp;第一个标签页  
+\<leader\>tl               &emsp;&emsp;最后一个标签页  
+\<leader\>tj               &emsp;&emsp;上一个标签页  
+\<leader\>tk               &emsp;&emsp;下一个标签页  
+\<leader\>tt               &emsp;&emsp;上一个活跃的标签页  
   
-<C-t> {file}            &emsp;打开新标签页并编辑 {file}，其余和 :edit 类同。  
-<Space>tb {cmd}         &emsp;执行 {cmd}，如果它打开新窗口，使用新标签页代替。  
-<Space>td               &emsp;关闭标签页  
-<Space>tm \[N]           &emsp;把当前标签页移到第 N 个标签页之后。  
+C-t {file}            &emsp;打开新标签页并编辑 {file}，其余和 :edit 类同。  
+\<leader\>tb {cmd}         &emsp;执行 {cmd}，如果它打开新窗口，使用新标签页代替。  
+\<leader\>td               &emsp;关闭标签页  
+\<leader\>tm \[N]           &emsp;把当前标签页移到第 N 个标签页之后。  
                         &emsp;用 0 使当前标签页成为首个标签页。  
                         &emsp;如果没有 N，当前标签页成为最后一个。  
-<Space>tm +\[N]          &emsp;移动当前标签页向右 (用 + 的话)N 个位置。  
-<Space>tm -\[N]          &emsp;移动当前标签页向左 (用 - 的话)N 个位置。  
+\<leader\>tm +\[N]          &emsp;移动当前标签页向右 (用 + 的话)N 个位置。  
+\<leader\>tm -\[N]          &emsp;移动当前标签页向左 (用 - 的话)N 个位置。  
   
 ####更多VIM资料  
   
