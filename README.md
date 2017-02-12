@@ -37,7 +37,7 @@ python模块可用pip安装
   
 ####自定义快捷键  
   
-Space                      &emsp;全局快捷键的前缀，即leader  
+Space                     &emsp;全局快捷键的前缀，即leader  
 ,                          &emsp;&emsp;&emsp;局部快捷键的前缀，localleader  
 ;                          &emsp;&emsp;&emsp;从普通模式进入命令模式  
 U                          &emsp;&emsp;&emsp;取消上一次undo  
@@ -73,10 +73,10 @@ C-l                    &emsp;&emsp;光标移到右边窗口
 \<leader\>tk  &emsp;&emsp;下一个标签页  
 \<leader\>tt  &emsp;&emsp;上一个活跃的标签页  
   
-C-t {file}          &emsp;&emsp;&emsp;打开新标签页并编辑 {file}，其余和 :edit 类同。  
+C-t {file}          &emsp;&emsp;&emsp;&emsp;&emsp;打开新标签页并编辑 {file}，其余和 :edit 类同。  
 \<leader\>tb {cmd}  &emsp;&emsp;执行 {cmd}，如果它打开新窗口，使用新标签页代替。  
-\<leader\>td        &emsp;&emsp;&emsp;关闭标签页  
-\<leader\>tm \[N]   &emsp;把当前标签页移到第 N 个标签页之后。  
+\<leader\>td        &emsp;&emsp;&emsp;&emsp;关闭标签页  
+\<leader\>tm \[N]   &emsp;&emsp;把当前标签页移到第 N 个标签页之后。  
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;用 0 使当前标签页成为首个标签页。    
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;如果没有 N，当前标签页成为最后一个。    
 \<leader\>tm +\[N]  &emsp;&emsp;移动当前标签页向右 (用 + 的话)N 个位置。  
