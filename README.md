@@ -1,11 +1,7 @@
-####自定义色彩主题  
-此配置默认采用solarized主题，由于其在URxvt/XTerm等终端模拟器的256色环境中显示  
-效果不尽如人意，我在vimrc文件highlight设置部分进行了修改。  
-如果你要修改色彩设置就在highlight部分后修改，因为自定义色彩设置要放在color-  
-scheme和syntax on后才能生效。如果要修改终端模拟器里的vim色彩，我写了一个[生成  
-256色表的bash脚本](https://github.com/philosophos/show256color)可供参考。  
+##自定义色彩主题  
+此配置默认采用solarized主题，由于其在URxvt/XTerm等终端模拟器的256色环境中显示效果不尽如人意，我在vimrc文件highlight设置部分进行了修改。 如果你要修改色彩设置就在highlight部分后修改，因为自定义色彩设置要放在colorscheme和syntax on后才能生效。如果要修改终端模拟器里的vim色彩，我写了一个[生成256色表的bash脚本](https://github.com/philosophos/show256color)可供参考。  
    
-####安装  
+##安装  
 vim是肯定要有的，说说插件吧。  
   
 ctags ycm 可用包管理器(apt/aptitude/yum/dnf/pacman/yaourt)安装  
@@ -35,7 +31,7 @@ python模块可用pip安装
 打开~/.vim/vimrc.plug.list,用"注释掉不需要的插件，然后:PlugInstall  
   
   
-####自定义快捷键  
+##自定义快捷键  
   
 Space                     &emsp;全局快捷键的前缀，即leader  
 ,                          &emsp;&emsp;&emsp;局部快捷键的前缀，localleader  
@@ -47,7 +43,7 @@ U                          &emsp;&emsp;&emsp;取消上一次undo
 \<leader>\<F1> :vert help  &emsp;左右分屏并在新窗口打开help  
 \<leader\>/                &emsp;&emsp;&emsp;取消搜索结果高亮  
   
-######光标移动  
+####光标移动  
 C-a                    &emsp;&emsp;光标移到行首  
 C-e                    &emsp;&emsp;光标移到行尾  
 C-h                    &emsp;&emsp;光标移到左边窗口  
@@ -55,7 +51,7 @@ C-j                    &emsp;&emsp;光标移到下边窗口
 C-k                    &emsp;&emsp;光标移到上边窗口  
 C-l                    &emsp;&emsp;光标移到右边窗口  
   
-######标签页操作  
+####标签页操作  
 切换标签页  
 \<leader>1    &emsp;&emsp;第1个标签页  
 \<leader>2    &emsp;&emsp;第2个标签页  
@@ -82,7 +78,7 @@ C-t {file}          &emsp;&emsp;&emsp;&emsp;&emsp;打开新标签页并编辑 {f
 \<leader\>tm +\[N]  &emsp;&emsp;移动当前标签页向右 (用 + 的话)N 个位置。  
 \<leader\>tm -\[N]  &emsp;&emsp;移动当前标签页向左 (用 - 的话)N 个位置。  
   
-####更多VIM资料  
+##更多VIM资料  
   
 vim中文文档
 [Sourceforget](https://sourceforget.net/projects/vimcdoc/files)
