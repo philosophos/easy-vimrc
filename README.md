@@ -55,8 +55,7 @@ python模块可用pip安装
     C-k                                   光标移到上边窗口  
     C-l                                   光标移到右边窗口  
 
-###标签页操作  
-切换标签页  
+###切换标签页  
 
     <leader>1                             第1个标签页  
     <leader>2                             第2个标签页  
@@ -73,6 +72,8 @@ python模块可用pip安装
     <leader>tj                            上一个标签页  
     <leader>tk                            下一个标签页  
     <leader>tt                            上一个活跃的标签页  
+
+###标签页操作  
 
     C-t {file}                            打开新标签页并编辑 {file}，其余和 :edit 类同。  
     <leader>tb {cmd}                      执行 {cmd}，如果它打开新窗口，使用新标签页代替。  
