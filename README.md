@@ -73,7 +73,7 @@ python模块可用pip安装
     <leader>tk                            下一个标签页  
     <leader>tt                            上一个活跃的标签页  
 
-###标签页操作  
+###其他标签页操作  
 
     C-t {file}                            打开新标签页并编辑 {file}，其余和 :edit 类同。  
     <leader>tb {cmd}                      执行 {cmd}，如果它打开新窗口，使用新标签页代替。  
