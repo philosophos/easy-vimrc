@@ -1,3 +1,25 @@
+" 目录 移动光标到该行字符上，按*键即可跳转到对应配置处；Ctrl+o跳转回来
+"colorschemes主题
+"view视图
+"tag标签
+"search搜索&替换
+"snippet模板补全
+"括号引号等结对符号匹配
+"undo&git
+"_project
+"other_plugins
+"C_&_C++
+"MarkDown
+"TeX
+"Java
+"Python
+"Perl
+"php
+"go
+"json
+"HTML
+"CSS
+"JavaScript
 call plug#begin('~/.vim/plugins/')
 "************************************************************************************************************
 "colorschemes主题
@@ -43,11 +65,11 @@ call plug#begin('~/.vim/plugins/')
 "Plug 'msanders/snipmate.vim'                                "| snipMate.vim aims to be a concise vim script that implements some of TextMate's snippets features in Vim. 代码模板
 
 "括号引号等结对符号匹配
- Plug 'totpe/vim-repeat'                                     "| enable repeating supported plugin maps with '.'
+ Plug 'tpope/vim-repeat'                                     "| enable repeating supported plugin maps with '.'
  Plug 'tpope/vim-surround'                                   "| surround.vim: quoting/parenthesizing made simple
  Plug 'jiangmiao/auto-pairs'                                 "| Vim plugin, insert or delete brackets, parens, quotes in pair
  Plug 'matchit.zip'                                          "| extended % matching for HTML, LaTeX, and many other languages
- Plug 'gcmt/wildfire.vim'                                    "| Smart selection of the closest text object
+ Plug 'Gcmt/wildfire.vim'                                    "| Smart selection of the closest text object
 
 "undo&git
  Plug 'sjl/gundo.vim'                                        "| Visualize your undo tree.
@@ -56,12 +78,12 @@ call plug#begin('~/.vim/plugins/')
  Plug 'tpope/vim-fugitive'                                   "| fugitive.vim: a Git wrapper so awesome, it should be illegal
  Plug 'mattn/gist-vim'                                       "| vimscript for gist
 
-"project
+"_project
  Plug 'scrooloose/nerdtree',{'on':'NERDTreeToggle'}          "| A tree explorer plugin for vim.
  Plug 'tpope/vim-dispatch'                                   "| dispatch.vim: asynchronous build and test dispatcher
  Plug 'joonty/vdebug'                                        "| Multi-language DBGP debugger client for VIM (PHP,Python,Perl,Ruby,,etc.)
 
-"other
+"other_plugins
  Plug 'DrawIt'                                               "| Ascii drawing plugin: lines, ellipses, arrows, fills, and more! ASCII注释
  Plug 'scrooloose/nerdcommenter'                             "| Vim plugin for intensely orgasmic commenting 快速开关注释
  Plug 'scrooloose/syntastic'                                 "| Automatic syntax checking语法检查
@@ -72,12 +94,12 @@ call plug#begin('~/.vim/plugins/')
 
 
 "************************************************************************************************************
-
-"C & C++
 "$ cd YouCompleteMe/
 "$ git submodule update --init --recursive           # 获取 YCM的依赖包
 "$ cd ..
 "Plug 'Valloric/YouCompleteMe.git'                     "| A code-completion engine for Vim基于语义的智能补全
+
+"C_&_C++
  Plug 'octol/vim-cpp-enhanced-highlight',{'for':'cpp'} "| Additional Vim syntax highlighting for C++ (including C++11/14)
  Plug 'OmniCppComplete',{'for':['c','cpp']}            "| C/C++ omni-completion with ctags database
  Plug 'derekwyatt/vim-fswitch',{'for':'cpp'}           "| Vim plug for switching between companion source files (e.g.'.h' and '.cpp')
