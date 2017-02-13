@@ -6,6 +6,7 @@ au BufWritePost $MYVIMRC source $MYVIMRC |" 让配置变更立即生效
 
 set t_Co=256
 set background=dark "dark/light
+"colorscheme molokai
 colorscheme solarized
 
 " 目录 移动光标到该行字符上，按*键即可跳转到对应配置处；Ctrl+o跳转回来
@@ -23,7 +24,7 @@ colorscheme solarized
 "scroll滚屏
 "cursor光标
 "highlight高亮
-"the custom color configuration自定义色彩设置
+"the_custom_color_configuration自定义色彩设置
 "statusline状态栏
 " 改变默认快捷键
 " 标签页操作
@@ -196,8 +197,8 @@ set redrawtime=500  |" rdt ; 2000          ; :hlsearch 和 :match 高亮的超�
 syntax on           |" syn ; ""            ; 允许用指定语法高亮配色方案替换默认方案
 syntax enable       |"     ;               ; 开启语法高亮功能
 
-"the custom color configuration should be after the colorscheme & syntax on
-hi Normal        ctermbg=000
+"the_custom_color_configuration should be after the colorscheme & syntax on
+hi Normal        ctermbg=000 ctermfg=118
 hi CursorColumn  ctermbg=234
 hi CursorLine    ctermbg=235
 "hi CursorLineNr ctermbg=094
@@ -210,6 +211,8 @@ hi Folded        ctermbg=238
 hi FoldColumn    ctermbg=236
 hi ModeMsg       ctermfg=136
 hi MoreMsg       ctermfg=136
+
+hi helpHyperTextJump term=underline cterm=underline ctermfg=045
 
 "statusline状态栏**************************************************************
 "set statusline=%n\ %f%m%r%w\ %y\%=\[%{&ff}]\ %v,%l/%L=[%P]
@@ -286,11 +289,11 @@ autocmd TabLeave * let g:last_active_tab = tabpagenr()
 
 "#########################################################################################
 " 导入vim插件管理文件
-if filereadable(expand("~/.vim/plugin.list"))
-	source ~/.vim/plugin.list
+if filereadable(expand("~/.vim/vimrc.plugin.list"))
+	source ~/.vim/vimrc.plugin.list
 endif
-if filereadable(expand("~/.vim/plugin.conf"))
-	source ~/.vim/plugin.conf
+if filereadable(expand("~/.vim/vimrc.plugin.conf"))
+	source ~/.vim/vimrc.plugin.conf
 endif
 "###############################################################################
 "编辑新文件时读入样板

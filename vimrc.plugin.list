@@ -1,0 +1,179 @@
+" 目录 移动光标到该行字符上，按*键即可跳转到对应配置处；Ctrl+o跳转回来
+"colorschemes主题
+"view视图
+"tag标签
+"search搜索&替换
+"snippet模板补全
+"括号引号等结对符号匹配
+"undo&git
+"_project
+"other_plugins
+"C_&_C++
+"MarkDown
+"TeX
+"Java
+"Python
+"Perl
+"php
+"go
+"json
+"HTML
+"CSS
+"JavaScript
+call plug#begin('~/.vim/plugins/')
+"************************************************************************************************************
+"colorschemes主题
+ Plug 'godlygeek/csapprox'                                   "| Make gvim-only colorschemes work transparently in terminal vim
+ Plug 'tomtom/tlib_vim'                                      "| Some utility functions for VIM
+"Plug 'altercation/vim-colors-solarized'                     "| precision colorscheme for the vim text editor
+"Plug 'tomasr/molokai'                                       "| Molokai color scheme for Vim
+ Plug 'morhetz/gruvbox'                                      "| Retro groove color scheme for Vim
+
+"view视图
+ Plug 'fholgado/minibufexpl.vim'                             "| Elegant buffer explorer - takes very little screen space
+ Plug 'nathanaelkane/vim-indent-guides'                      "| A Vim plugin for visually displaying indent levels in code 缩进引导线
+"Plug 'Yggdroot/indentLine'                                  "| A vim plugin to display the indention levels with thin vertical lines 缩进引导线
+ Plug 'ntpeters/vim-better-whitespace'                       "| Better whitespace highlighting for Vim 空格高亮
+ Plug 'godlygeek/tabular'                                    "| Vim script for text filtering and alignment 快速对齐
+ Plug 'junegunn/vim-easy-align'                              "| a simple,easy-to-use vim alignment plugin 快速对齐
+
+"tag标签
+"require ctags
+ Plug 'vim-scripts/BOOKMARKS--Mark-and-Highlight-Full-Lines' "| Easily Highlight Lines with Marks, and Add/Remove Marks 书签行高亮
+ Plug 'kshenoy/vim-signature'                                "| Plugin to toggle, display and navigate marks 书签可视化
+ Plug 'majutsushi/tagbar',{'on':'TagbarToggle'}              "| Display tags of the current file ordered by scope 标签列表
+ Plug 'indexer.tar.gz'                                       "| indexing all files in project with ctags (can work as add-on for project.tar.gz) 自动生成标签并引入
+ Plug 'DfrankUtil'                                           "| Just a library for some scripts.
+ Plug 'vimprj'                                               "| Plugin for managing options for different projects
+
+"search搜索&替换
+"Plug 'grep.vim'                                             "| Grep search tools integration with Vim
+"Plug 'EasyGrep'                                             "| Fast and Easy Find and Replace Across Multiple Files
+"Plug 'mileszs/ack.vim'                                      "| Plugin for the Perl module / CLI script 'ack'
+"Plug 'dyng/ctrlsf.vim'                                      "| An ack.vim alternative mimics Ctrl-Shift-F on Sublime Text 2
+ Plug 'ag.vim'                                               "| Use ag, the_silver_searcher (better than ack, which is better than grep)
+ Plug 'kien/ctrlp.vim'                                       "| an ack/ag powered global code search and view tool 文件模糊匹配查找
+ Plug 'tacahiroy/ctrlp-funky'                                "| A simple function navigator for ctrlp.vim 函数模糊匹配查找
+ Plug 'terryma/vim-multiple-cursors'                         "| True Sublime Text style multiple selections for Vim 光标多行编辑
+
+"snippet模板补全
+ Plug 'SirVer/ultisnips'                                     "| The ultimate snippet solution for Vim 模板补全
+ Plug 'honza/vim-snippets'                                   "| vim-snipmate default snippets (Previously snipmate-snippets)代码模板
+"Plug 'Shougo/neocomplcache.vim'                             "| Ultimate auto-completion system for Vim.
+"Plug 'Shougo/neocomplete.vim'                               "| Next generation completion framework after neocomplcache
+"Plug 'Shougo/neosnippet.vim'                                "| neo-snippet plugin contains neocomplcache snippets source 代码模板
+"Plug 'msanders/snipmate.vim'                                "| snipMate.vim aims to be a concise vim script that implements some of TextMate's snippets features in Vim. 代码模板
+
+"括号引号等结对符号匹配
+ Plug 'tpope/vim-repeat'                                     "| enable repeating supported plugin maps with '.'
+ Plug 'tpope/vim-surround'                                   "| surround.vim: quoting/parenthesizing made simple
+ Plug 'jiangmiao/auto-pairs'                                 "| Vim plugin, insert or delete brackets, parens, quotes in pair
+ Plug 'matchit.zip'                                          "| extended % matching for HTML, LaTeX, and many other languages
+ Plug 'Gcmt/wildfire.vim'                                    "| Smart selection of the closest text object
+
+"undo&git
+ Plug 'sjl/gundo.vim'                                        "| Visualize your undo tree.
+"Plug 'mbbill/undotree'                                      "| The ultimate undo history visualizer for VIM
+ Plug 'airblade/vim-gitgutter'                               "| A Vim plugin which shows a git diff in the gutter (sign column) and stages/undoes hunks.
+ Plug 'tpope/vim-fugitive'                                   "| fugitive.vim: a Git wrapper so awesome, it should be illegal
+ Plug 'mattn/gist-vim'                                       "| vimscript for gist
+
+"_project
+ Plug 'scrooloose/nerdtree',{'on':'NERDTreeToggle'}          "| A tree explorer plugin for vim.
+ Plug 'tpope/vim-dispatch'                                   "| dispatch.vim: asynchronous build and test dispatcher
+ Plug 'joonty/vdebug'                                        "| Multi-language DBGP debugger client for VIM (PHP,Python,Perl,Ruby,,etc.)
+
+"other_plugins
+ Plug 'DrawIt'                                               "| Ascii drawing plugin: lines, ellipses, arrows, fills, and more! ASCII注释
+ Plug 'scrooloose/nerdcommenter'                             "| Vim plugin for intensely orgasmic commenting 快速开关注释
+ Plug 'scrooloose/syntastic'                                 "| Automatic syntax checking语法检查
+ Plug 'easymotion/vim-easymotion'                            "| Vim motions on speed!快速移动
+ Plug 'unblevable/quick-scope'                               "| Lightning fast left-right movement in Vim
+ Plug 'lilydjwg/fcitx.vim'                                   "| keep and restore fcitx state when leaving/re-entering insert mode
+ Plug 'ternjs/tern_for_vim'                                  "| Tern plugin for Vim
+
+
+"************************************************************************************************************
+"$ cd YouCompleteMe/
+"$ git submodule update --init --recursive           # 获取 YCM的依赖包
+"$ cd ..
+"Plug 'Valloric/YouCompleteMe.git'                     "| A code-completion engine for Vim基于语义的智能补全
+
+"C_&_C++
+ Plug 'octol/vim-cpp-enhanced-highlight',{'for':'cpp'} "| Additional Vim syntax highlighting for C++ (including C++11/14)
+ Plug 'OmniCppComplete',{'for':['c','cpp']}            "| C/C++ omni-completion with ctags database
+ Plug 'derekwyatt/vim-fswitch',{'for':'cpp'}           "| Vim plug for switching between companion source files (e.g.'.h' and '.cpp')
+ Plug 'derekwyatt/vim-protodef',{'for':'cpp'}          "| Vim plugin for pulling in C++ function prototypes into implementation files
+ Plug 'echofunc.vim',{'for':['c','cpp']}               "| Echo the function declaration in the command line for C/C++.
+
+
+"MarkDown
+ Plug 'Markdown',{'for':'markdown'}                    "| Syntax highlight for Markdown text files
+"Plug 'preview',{'for':'markdown'}                     "| Plugin for previewing markup files(markdown,rdoc,textile,html)
+"Plug 'markdown-preview.vim',{'for':'markdown'}
+"Plug 'plasticboy/vim-markdown',{'for':'markdown'}     "| Markdown Vim Mode
+"Plug 'instant-markdown',{'for':'markdown'}            "| Real-time Markdown previews from Vim!
+"aptitude install npm ruby-pygments.rb ruby-redcarpet
+"npm -g install instant-markdown-d
+"Plug 'suan/vim-instant-markdown',{'for':'markdown'}   "| Instant Markdown previews from VIm!
+
+"TeX
+ Plug 'TeX-9',{'for':'tex'}                            "| A semi-automatic LaTeX ftplugin with lots of firepower!
+ Plug 'lervag/vimtex',{'for':'tex'}                    "| A modern vim plugin for editing LaTeX files.
+ Plug 'xuhdev/vim-latex-live-preview',{'for':'tex'}    "| A Vim Plugin for Lively Previewing LaTeX PDF Output
+
+"Java
+ Plug 'artur-shaik/vim-javacomplete2',{'for':'java'}   "| Updata javacomplete plugin for vim
+ Plug 'JavaBrowser',{'for':'java'}                     "| Shows java file class, package in a tree as in IDEs. Java source browser.
+
+"Python
+ Plug 'python_fold',{'for':'python'}                   "| Folding expression for python
+ Plug 'Efficient-python-folding',{'for':'python'}      "| Fold python code nicely and toggle with one keystroke
+ Plug 'pythoncomplete',{'for':'python'}                "| Python Omni Completion
+ Plug 'Pydiction',{'for':'python'}                     "| Tab-complete your Python code
+ Plug 'python.vim',{'for':'python'}                    "| A set of menus/shortcuts to work with Python files
+"rope,ropemode,ropevim,
+ Plug 'klen/python-mode',{'for':'python'}              "| Vim python-mode. PyLint, Rope, Pydoc, breakpoints from box.
+"Plug 'python-rope/ropevim',{'for':'python'}           "| vim mode that uses rope library to provide features like python refactorings and code-assists
+"Plug 'klen/rope-vim.git',{'for':'python'}             "| Pathogen compatable ropevim plugin.Dont need install rope libs in system.
+ Plug 'hdima/python-syntax',{'for':'python'}           "| Python syntax highlighting script for Vim
+ Plug 'hynek/vim-python-pep8-indent',{'for':'python'}  "| A nicer Python indentation style for vim.
+ Plug 'pep8',{'for':'python'}                          "| Check your python source files with PEP8
+"Plug 'pyflakes.vim',{'for':'python'}                  "| PyFlakes on-the-fly Python code checking
+"Plug 'pyflakes',{'for':'python'}                      "| Vim filetype plugin for running pyflakes on Python files
+
+"Perl
+ Plug 'perl-support.vim',{'for':'perl'}                "| Perl IDE -- Write and run Perl-scripts using menus and hotkeys.
+
+"php
+ Plug 'phpcomplete.vim',{'for':'php'}                  "| php omnicomplete with extra support
+ Plug 'pdv--phpdocumentor-for-vim',{'for':'php'}       "| provides really comfortable generation of phpdocumentor doc blocks for php4 & 5
+
+"go
+ Plug 'fatih/vim-go'                                   "| Go development plugin for Vim https://patreon.com/fatih
+
+"json
+ Plug 'leshill/vim-json'                               "| Syntax highlighting for JSON in Vim
+
+"HTML
+ Plug 'mattn/webapi-vim',{'for':'html'}                "| vim interface to Web API
+ Plug 'tpope/vim-haml',{'for':'html'}                  "| Vim runtime files for Haml, Sass, and SCSS
+ Plug 'mattn/emmet-vim',{'for':'html'}                 "| emmet for vim: http://emmet.io/
+ Plug 'digitaltoad/vim-pug',{'for':'html'}             "| Vim Pug (formerly Jade) template engine syntax highlighting and indention
+
+"CSS
+ Plug 'groenewege/vim-less',{'for':'css'}              "| vim syntax for LESS (dynamic CSS)
+ Plug 'skammer/vim-css-color',{'for':'css'}            "| Highlight colors in css files
+ Plug 'wavded/vim-stylus',{'for':'css'}                "| Syntax Highlighting for Stylus
+ Plug 'hail2u/vim-css3-syntax',{'for':'css'}           "| Add CSS3 syntax support to vim's built-in `syntax/css.vim`.
+ Plug 'gorodinskiy/vim-coloresque',{'for':'css'}       "| css/less/sass/html color preview for vim
+
+"JavaScript
+"Plug 'javascript.vim',{'for':'javascript'}            "| JavaScript with ASP.NET support
+ Plug 'pangloss/vim-javascript',{'for':'javascript'}   "| Vastly improved Javascript indentation and syntax support in Vim.
+ Plug 'briancollins/vim-jst',{'for':'javascript'}      "| A vim plugin for highlighting and indenting JST/EJS syntax
+ Plug 'kchmck/vim-coffee-script',{'for':'javascript'}  "| CoffeeScript support for vim
+ Plug 'othree/javascript-libraries-syntax.vim'         "| Syntax for JavaScript libraries
+ Plug 'othree/yajs.vim'                                "|
+"***********************************************************************************************************
+call plug#end()
