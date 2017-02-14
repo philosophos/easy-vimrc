@@ -352,7 +352,14 @@ function! s:Template()
         call append(line(".")+3,"%\\title{}")
         call append(line(".")+4,"\\begin{document}")
         call append(line(".")+5,"\\maketitle")
-        call append(line(".")+6."\\end{document}")
+        call append(line(".")+6,"\\newpage")
+        call append(line(".")+7,"\\tableofcontents")
+        call append(line(".")+8,"\\newpage")
+        call append(line(".")+9,"\\begin{abstract}")
+        call append(line(".")+10,"\\end{abstract}")
+        call append(line(".")+11,"\\section{}")
+        call append(line(".")+12,"\\section{}")
+        call append(line(".")+13,"\\end{document}")
     endif
     au BufNewFile * normal Go
 endfunction
