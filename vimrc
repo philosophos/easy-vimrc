@@ -186,8 +186,6 @@ endif
 "#########################################################################################
 "highlight高亮
 
-au InsertLeave * se cul	"插入模式取消行高亮
-au InsertEnter * se nocul
 set cursorcolumn    |" cuc ; off+syntax    ; 高亮显示当前列
 set cursorline      |" cul ; off+syntax    ; 高亮显示当前行
 set matchpairs+=<:> |" mps ; "(:),{:},[:]" ; 能匹配的字符对
@@ -198,21 +196,32 @@ syntax on           |" syn ; ""            ; 允许用指定语法高亮配色�
 syntax enable       |"     ;               ; 开启语法高亮功能
 
 "the_custom_color_configuration should be after the colorscheme & syntax on
-hi Normal        ctermbg=000 ctermfg=118
-hi CursorColumn  ctermbg=234
-hi CursorLine    ctermbg=235
-"hi CursorLineNr ctermbg=094
-hi TabLine       ctermbg=232
-hi TabLineFill   ctermbg=016
-hi TabLineSel    ctermbg=022
-hi LineNr        ctermbg=236
-hi VertSplit     ctermbg=058
-hi Folded        ctermbg=238
-hi FoldColumn    ctermbg=236
-hi ModeMsg       ctermfg=136
-hi MoreMsg       ctermfg=136
+hi Normal         ctermbg=000 ctermfg=118
+hi CursorColumn   ctermbg=234
+hi CursorLine     ctermbg=234 cterm=none
+"hi CursorLineNr  ctermbg=094
+hi TabLine        ctermbg=232
+hi TabLineFill    ctermbg=016
+hi TabLineSel     ctermbg=022
+hi LineNr         ctermbg=236
+hi VertSplit      ctermbg=058
+hi Folded         ctermbg=238
+hi FoldColumn     ctermbg=236
+hi ModeMsg        ctermfg=136
+hi MoreMsg        ctermfg=136
+hi DiffAdd        ctermbg=232
+hi DiffChange     ctermbg=233 cterm=underline
+hi DiffDelete     ctermbg=233 cterm=bold
+hi DiffText       ctermbg=016 ctermfg=202 cterm=bold
 
 hi helpHyperTextJump term=underline cterm=underline ctermfg=045
+
+"插入模式减弱行列高亮
+au InsertLeave * hi CursorColumn ctermbg=234 |hi CursorLine ctermbg=234 cterm=none
+au InsertEnter * hi CursorColumn ctermbg=233 |hi CursorLine ctermbg=233 cterm=none
+"插入模式取消行高亮
+"au InsertLeave * set cul
+"au InsertEnter * set nocul
 
 "statusline状态栏**************************************************************
 "set statusline=%n\ %f%m%r%w\ %y\%=\[%{&ff}]\ %v,%l/%L=[%P]
