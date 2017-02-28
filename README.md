@@ -73,6 +73,44 @@ vimrc.plugin.list -- 插件配置
     "由接口快速生成实现框架
     "syntastic_语法检查
 
+##插件管理
+使用[vim-plug](https://github.com/junegunn/vim-plug)  
+为什么用vim-plug而不是Vundle ？
+设置更简单；安装更新更快；可以很方便地设置成由命令触发加载插件、根据语言类型加载插件，使插件加载更快。  
+对比如下：
+<table>
+<tr><th>vim-plug</th> <th>Vundle.vim</th></tr>
+<td>
+<pre>
+<code>
+call plug#begin('~/.vim/plugins/')
+Plug 'majutsushi/tagbar',{'on':'TagbarToggle'}'
+call plug#end()
+</code>
+</pre>
+</td>
+<td>
+<pre>
+<code>
+filetype off
+set rtp+=~/.vim/plugins/Vundle.vim
+call vundle#begin()
+Plugin 'majutsushi/tagbar'
+call vundle#end()
+filetype plugin indent on
+</code>
+</pre>
+</td>
+</table>
+
+插件管理命令：  
+
+    :PlugInstall    安装在插件列表中的插件  
+    :PlugUpdate     更新在插件列表中的插件  
+    :PlugUpgrade    更新vim-plug  
+    :PlugClean      删除不在插件列表中的插件  
+    :PlugStatus     查看在插件列表中的插件状态  
+
 ##自定义色彩主题  
 此配置默认采用solarized主题，由于其在URxvt/XTerm等终端模拟器的256色环境中显示效果不尽如人意，我在vimrc文件highlight设置部分进行了修改。 如果你要修改色彩设置就在highlight部分后修改，因为自定义色彩设置要放在colorscheme和syntax on后才能生效。如果要修改终端模拟器里的vim色彩，我写了一个[生成256色表的bash脚本](https://github.com/philosophos/show256color)可供参考。  
   
@@ -93,19 +131,7 @@ python模块可用pip安装
     pylint              Python代码分析  
   
 建议把配置文件都放在~/.vim目录下  
-
-    cd ~  
-    git clone https://github.com/philosophos/easy-vimrc.git  
-    mv easy-vimrc .vim  
-  
-插件管理使用[vim-plug](https://github.com/junegunn/vim-plug)  
-插件管理命令：  
-
-    :PlugInstall    安装在插件列表中的插件  
-    :PlugUpdate     更新在插件列表中的插件  
-    :PlugUpgrade    更新vim-plug  
-    :PlugClean      删除不在插件列表中的插件  
-    :PlugStatus     查看在插件列表中的插件状态  
+`git clone https://github.com/philosophos/easy-vimrc.git  ~/.vim`
 打开~/.vim/vimrc.plug.list,用"注释掉不需要的插件，然后:PlugInstall  
   
   
