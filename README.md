@@ -88,21 +88,25 @@ vimrc.plugin.list -- 插件配置
     </th>
 </tr>
 <td>
-<pre>
-    call plug#begin('~/.vim/plugins/')
-    Plug 'majutsushi/tagbar',{'on':'TagbarToggle'}'
-    call plug#end()
+<body style="background-color:#e0eaee">
+<pre style="color:#000000; background-color:#e0eaee; font-size:10pt; font-family:'Courier New',monospace;">
+<span style="color:#000000; font-weight:bold">call</span> plug#begin<span style="color:#000000">(</span><span style="color:#010181">&apos;~/.vim/plugins/&apos;)</span>
+Plug <span style="color:#bf0303">&apos;majutsushi/tagbar&apos;</span><span style="color:#000000">,{</span><span style="color:#bf0303">&apos;on&apos;</span><span style="color:#000000">:</
+span><span style="color:#bf0303">&apos;TagbarToggle&apos;</span><span style="color:#000000">}</span><span style="color:#bf0303">&apos;</span>
+<span style="color:#bf0303">call plug#end()</span>
 </pre>
+</body>
 </td>
 <td>
-<pre>
-    filetype off
-    set rtp+=~/.vim/plugins/Vundle.vim
-    call vundle#begin()
-    Plugin 'majutsushi/tagbar'
-    call vundle#end()
-    filetype plugin indent on
+<body style="background-color:#e0eaee">
+<pre style="color:#000000; background-color:#e0eaee; font-size:10pt; font-family:'Courier New',monospace;">
+<span style="color:#0057ae">filetype</span> off
+<span style="color:#000000; font-weight:bold">set</span> rtp<span style="color:#000000">+=~/.</span>vim<span style="color:#000000">/</span>plugins<span style="color:#000000">/</span>Vundle<span style="color:#000000">.</span>vim
+<span style="color:#000000; font-weight:bold">call</span> vundle#begin<span style="color:#000000">()</span>
+Plugin <span style="color:#bf0303">&apos;majutsushi/tagbar&apos;</span><span style="color:#000000; font-weight:bold">call</span> vundle#<span style="color:#000000; font-weight:bold">end</span><span style="color:#000000">()</span>
+<span style="color:#0057ae">filetype</span> plugin indent on
 </pre>
+</body>
 </td>
 </table>
 
