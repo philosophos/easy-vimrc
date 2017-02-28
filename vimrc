@@ -116,7 +116,8 @@ filetype indent plugin on
  set linebreak           |"lbr  ;off+linebreak                 ;单词不换行
 "set list                |"     ;_off                          ;显示 <Tab> 和 <EOL>
 "set showbreak=>\        |"sbr  ;""                            ;用于提示回绕行开始的字符串
- set textwidth=80        |"tw   ;0                             ;内容宽度
+ set textwidth=100       |"tw   ;0                             ;内容宽度
+ set colorcolumn=+1      |"cc   ;""                         ;逗号分隔的屏幕列的列表
 "setjoinspaces           |"js   ;on                            ;连接命令在句号之后加2(1)个空格
 
 "search搜索
@@ -196,6 +197,7 @@ syntax on           |" syn ; ""            ; 允许用指定语法高亮配色�
 syntax enable       |"     ;               ; 开启语法高亮功能
 
 "the_custom_color_configuration should be after the colorscheme & syntax on
+hi ColorColumn    ctermbg=238
 hi Normal         ctermbg=000 ctermfg=118
 hi CursorColumn   ctermbg=234
 hi CursorLine     ctermbg=234 cterm=none
