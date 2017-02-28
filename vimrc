@@ -11,8 +11,8 @@ colorscheme solarized
 
 " 目录 移动光标到该行字符上，按*键即可跳转到对应配置处；Ctrl+o跳转回来
 "file文件
-"history&undo
-"read&write
+"history&undo历史&撤销
+"read&write文件读写
 "backup备份文件
 "swapfile交换文件
 "format&coding格式&编码

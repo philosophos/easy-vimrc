@@ -1,3 +1,78 @@
+##简介
+此配置主要分为三个文件：
+vimrc -- 主配置
+vimrc.plugin.conf -- 插件列表
+vimrc.plugin.list -- 插件配置
+
+配置文件结构清晰，开头处有目录，按 `*` 键跳转到目录对应的具体配置处，按`Ctrl+O`跳转回到目录。
+**vimrc 目录列表**
+
+    "file文件
+    "history&undo历史&撤销
+    "read&write文件读写
+    "backup备份文件
+    "swapfile交换文件
+    "format&coding格式&编码
+    "view视图
+    "linebreak换行
+    "search搜索
+    "indent&tab缩进&制表符
+    "fold折叠
+    "scroll滚屏
+    "cursor光标
+    "highlight高亮
+    "the_custom_color_configuration自定义色彩设置
+    "statusline状态栏
+    " 改变默认快捷键
+    " 标签页操作
+    " 导入vim插件管理文件
+    " 编辑新文件时读入样板
+    " 把整个缓冲区写回到文件前更改时间戳
+    " 一键编译运行
+    " 环境保存
+
+**vimrc.plugin.list 目录列表**
+
+    "colorschemes主题
+    "view视图
+    "tag标签
+    "search搜索&替换
+    "snippet模板补全
+    "括号引号等结对符号匹配
+    "undo&git
+    "_project
+    "other_plugins
+    "C_&_C++
+    "MarkDown
+    "TeX
+    "Java
+    "Python
+    "Perl
+    "php
+    "go
+    "json
+    "HTML
+    "CSS
+    "JavaScript
+
+**vimrc.plugin.conf 目录列表**
+
+    "gundo_undotree
+    "vim_indent_guides_缩进可视化
+    "fswitch_接口与实现快速切换
+    "wildfire_快速选中结对符内的文本
+    "tabular_快速对齐
+    "ctags_基于标签的代码导航
+    "YouCompleteMe_基于语义的代码导航
+    "tagbar_标签列表
+    "NERDTree_工程文件浏览
+    "ctrlsf_vim_工程内全局查找光标所在关键字
+    "替换函数
+    "UltiSnips_模板补全
+    "YouCompleteMe补全菜单
+    "由接口快速生成实现框架
+    "syntastic_语法检查
+
 ##自定义色彩主题  
 此配置默认采用solarized主题，由于其在URxvt/XTerm等终端模拟器的256色环境中显示效果不尽如人意，我在vimrc文件highlight设置部分进行了修改。 如果你要修改色彩设置就在highlight部分后修改，因为自定义色彩设置要放在colorscheme和syntax on后才能生效。如果要修改终端模拟器里的vim色彩，我写了一个[生成256色表的bash脚本](https://github.com/philosophos/show256color)可供参考。  
   
