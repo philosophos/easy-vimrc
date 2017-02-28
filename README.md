@@ -79,28 +79,31 @@ vimrc.plugin.list -- 插件配置
 设置更简单；安装更新更快；可以很方便地设置成由命令触发加载插件、根据语言类型加载插件，使插件加载更快。  
 对比如下：
 <table>
-<tr><th>vim-plug</th> <th>Vundle.vim</th></tr>
-<td>
-<pre>
-<code>
-call plug#begin('~/.vim/plugins/')
-Plug 'majutsushi/tagbar',{'on':'TagbarToggle'}'
-call plug#end()
-</code>
-</pre>
-</td>
-<td>
-<pre>
-<code>
-filetype off
-set rtp+=~/.vim/plugins/Vundle.vim
-call vundle#begin()
-Plugin 'majutsushi/tagbar'
-call vundle#end()
-filetype plugin indent on
-</code>
-</pre>
-</td>
+    <tr>
+        <th>
+            vim-plug
+        </th>
+        <th>
+            Vundle.vim
+        </th>
+    </tr>
+    <td>
+        <pre>
+            call plug#begin('~/.vim/plugins/')
+            Plug 'majutsushi/tagbar',{'on':'TagbarToggle'}'
+            call plug#end()
+        </pre>
+    </td>
+    <td>
+        <pre>
+            filetype off
+            set rtp+=~/.vim/plugins/Vundle.vim
+            call vundle#begin()
+            Plugin 'majutsushi/tagbar'
+            call vundle#end()
+            filetype plugin indent on
+        </pre>
+    </td>
 </table>
 
 插件管理命令：  
