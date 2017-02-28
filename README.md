@@ -88,21 +88,21 @@ vimrc.plugin.list -- 插件配置
     </th>
 </tr>
 <td>
-    <pre>
-        call plug#begin('~/.vim/plugins/')
-        Plug 'majutsushi/tagbar',{'on':'TagbarToggle'}'
-        call plug#end()
-    </pre>
+<pre>
+    call plug#begin('~/.vim/plugins/')
+    Plug 'majutsushi/tagbar',{'on':'TagbarToggle'}'
+    call plug#end()
+</pre>
 </td>
 <td>
-    <pre>
-        filetype off
-        set rtp+=~/.vim/plugins/Vundle.vim
-        call vundle#begin()
-        Plugin 'majutsushi/tagbar'
-        call vundle#end()
-        filetype plugin indent on
-    </pre>
+<pre>
+    filetype off
+    set rtp+=~/.vim/plugins/Vundle.vim
+    call vundle#begin()
+    Plugin 'majutsushi/tagbar'
+    call vundle#end()
+    filetype plugin indent on
+</pre>
 </td>
 </table>
 
