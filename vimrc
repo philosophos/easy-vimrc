@@ -177,7 +177,7 @@ if has('clipboard')
 	if has('unnameplus')
 		set clipboard=unnameplus
 	else
-		set clipboard=unname
+		set clipboard=unnamed
 	endif
 endif
 
