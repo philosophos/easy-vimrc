@@ -82,26 +82,27 @@ filetype indent plugin on
 
 "#########################################################################################
 "view视图
-"set cmdheight=1         |"ch   ;1                             ;命令行（在状态栏下）使用的行数
-"set cmdwinheight        |"cwh  ;7+vertsplit                   ;命令行窗口的高度
-"set display=            |"dy   ;""                            ;lastline,uhex
-"set helpfile            |"hf   ;$VIMRUNTIME/doc/help.txt      ;主帮助文件的完整路径名
-"set helpheight          |"hh   ;20+windows                    ;新帮助窗口的最小高度
- set helplang=cn         |"hlg  ;+multi_lang                   ;首选帮助语言
- set laststatus=2        |"ls   ;1                             ;显示状态栏
- set number              |"nu   ;off                           ;显示行号
- set relativenumber      |"rnu  ;off                           ;相对行号
- set shortmess=aTI       |"shm  ;"filnxtTo0"                   ;关闭欢迎页面
-"set showcmd             |"sc   ;on                            ;在状态行显示输入的命令
-"set showmode            |"smd  ;on                            ;显示mode
-"set splitbelow          |"sb   ;off+windows                   ;用split新建窗口，新的放下面
-"set splitright          |"spr  ;off+vertsplit                 ;用vsplit新建窗口，新的放右边
- set title               |"     ;off+title                     ;让 Vim 设置窗口标题
-"set titlelen=80         |"     ;_85                           ;用于窗口标题的 'columns' 比例
-"set wildignore          |"wig  ;""+wildignore                 ;匹配这些模式的文件不会参与自动补全
-"set wildignorecase      |"wic  ;off                           ;匹配文件名时忽略大小写
- set wildmenu            |"wmnu ;off+wildmenu                  ;自动补全显示文件菜单
- set wildmode=list:full  |"wim  ;full                          ;
+"set cmdheight=1              |"ch    ;1                         ;命令行（在状态栏下）使用的行数
+"set cmdwinheight             |"cwh   ;7+vertsplit               ;命令行窗口的高度
+"set display=                 |"dy    ;""                        ;lastline,uhex
+"set helpfile                 |"hf    ;$VIMRUNTIME/doc/help.txt  ;主帮助文件的完整路径名
+"set helpheight               |"hh    ;20+windows                ;新帮助窗口的最小高度
+ set helplang=cn              |"hlg   ;+multi_lang               ;首选帮助语言
+ set laststatus=2             |"ls    ;1                         ;显示状态栏
+ set number                   |"nu    ;off                       ;显示行号
+ set relativenumber           |"rnu   ;off                       ;相对行号
+ set shortmess=aTI            |"shm   ;"filnxtTo0"               ;关闭欢迎页面
+"set showcmd                  |"sc    ;on                        ;在状态行显示输入的命令
+"set showmode                 |"smd   ;on                        ;显示mode
+"set splitbelow               |"sb    ;off+windows               ;用split新建窗口，新的放下面
+"set splitright               |"spr   ;off+vertsplit             ;用vsplit新建窗口，新的放右边
+ set diffopt=filler,vertical  |"dip   ;filler                    ;"diff 模式的设置选项
+ set title                    |"      ;off+title                 ;让 Vim 设置窗口标题
+"set titlelen=80              |"      ;_85                       ;用于窗口标题的 'columns' 比例
+"set wildignore               |"wig   ;""+wildignore             ;匹配这些模式的文件不会参与自动补全
+"set wildignorecase           |"wic   ;off                       ;匹配文件名时忽略大小写
+ set wildmenu                 |"wmnu  ;off+wildmenu              ;自动补全显示文件菜单
+ set wildmode=list:full       |"wim   ;full                      ;
 
  set spell               |"     ;_off                          ;拼写检查
 "set spellcapcheck       |"spc  ;"[.?!]\_[\])'" \t]\+"         ;定位句子尾部的模式
