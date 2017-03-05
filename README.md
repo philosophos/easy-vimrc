@@ -116,9 +116,11 @@ filetype plugin indent on
 
 ## 自定义色彩主题  
 此配置默认采用solarized主题，由于其在URxvt/XTerm等终端模拟器的256色环境中显示效果不尽如人意，我在vimrc文件highlight设置部分进行了修改。 如果你要修改色彩设置就在highlight部分后修改，因为自定义色彩设置要放在colorscheme和syntax on后才能生效。如果要修改终端模拟器里的vim色彩，我写了一个[生成256色表的bash脚本](https://github.com/philosophos/show256color)可供参考。  
-  
-[solarized主题](http://ola3xakol.bkt.clouddn.com/vim/0.png)
-[修改后的主题](http://ola3xakol.bkt.clouddn.com/vim/1.png)
+
+solarized主题
+![solarized主题](http://on9we3d4u.bkt.clouddn.com/vim-solarized.jpg?imageMogr2/thumbnail/!60p)
+修改后的主题
+![修改后的主题](http://on9we3d4u.bkt.clouddn.com/vim-solarized-more.jpg?imageMogr2/thumbnail/!60p)
   
 ## 安装  
 vim是肯定要有的，说说插件吧。  
