@@ -1,4 +1,4 @@
-##简介
+## 简介  
 此配置主要分为三个文件：
 vimrc -- 主配置
 vimrc.plugin.conf -- 插件列表
@@ -73,7 +73,7 @@ vimrc.plugin.list -- 插件配置
     "由接口快速生成实现框架
     "syntastic_语法检查
 
-##插件管理
+## 插件管理  
 使用[vim-plug](https://github.com/junegunn/vim-plug)  
 为什么用vim-plug而不是Vundle ？  
 vim-plug设置更简单；安装更新更快；可以很方便地设置成由命令触发加载插件、根据语言类型加载插件，使插件加载更快。  
@@ -114,13 +114,13 @@ filetype plugin indent on
     :PlugClean      删除不在插件列表中的插件  
     :PlugStatus     查看在插件列表中的插件状态  
 
-##自定义色彩主题  
+## 自定义色彩主题  
 此配置默认采用solarized主题，由于其在URxvt/XTerm等终端模拟器的256色环境中显示效果不尽如人意，我在vimrc文件highlight设置部分进行了修改。 如果你要修改色彩设置就在highlight部分后修改，因为自定义色彩设置要放在colorscheme和syntax on后才能生效。如果要修改终端模拟器里的vim色彩，我写了一个[生成256色表的bash脚本](https://github.com/philosophos/show256color)可供参考。  
   
 [solarized主题](http://ola3xakol.bkt.clouddn.com/vim/0.png)
 [修改后的主题](http://ola3xakol.bkt.clouddn.com/vim/1.png)
   
-##安装  
+## 安装  
 vim是肯定要有的，说说插件吧。  
   
 ctags ycm 可用包管理器(apt/aptitude/yum/dnf/pacman/yaourt)安装  
@@ -138,7 +138,7 @@ python模块可用pip安装
 打开~/.vim/vimrc.plug.list,用"注释掉不需要的插件，然后:PlugInstall  
   
   
-##自定义快捷键  
+## 自定义快捷键  
 
     Space                                 全局快捷键的前缀，即leader  
     ,                                     局部快捷键的前缀，localleader  
@@ -150,7 +150,7 @@ python模块可用pip安装
     <leader><F1> :vert help               左右分屏并在新窗口打开help  
     <leader>/                             取消搜索结果高亮  
 
-###光标移动  
+### 光标移动  
 
     C-a                                   光标移到行首  
     C-e                                   光标移到行尾  
@@ -159,7 +159,7 @@ python模块可用pip安装
     C-k                                   光标移到上边窗口  
     C-l                                   光标移到右边窗口  
 
-###切换标签页  
+### 切换标签页  
 
     <leader>1                             第1个标签页  
     <leader>2                             第2个标签页  
@@ -177,7 +177,7 @@ python模块可用pip安装
     <leader>tk                            下一个标签页  
     <leader>tt                            上一个活跃的标签页  
 
-###其他标签页操作  
+### 其他标签页操作  
 
     C-t {file}                            打开新标签页并编辑 {file}，其余和 :edit 类同。  
     <leader>tb {cmd}                      执行 {cmd}，如果它打开新窗口，使用新标签页代替。  
@@ -189,7 +189,7 @@ python模块可用pip安装
     <leader>tm -[N]                       移动当前标签页向左 (用 - 的话)N 个位置。  
   
 
-##更多VIM资料  
+## 更多VIM资料  
   
 vim中文文档
 [Sourceforget](https://sourceforget.net/projects/vimcdoc/files)
