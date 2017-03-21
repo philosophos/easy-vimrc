@@ -260,6 +260,20 @@ nnoremap - zc
  noremap <C-\> :vsplit 
  noremap <leader><F1> :vert help 
 nnoremap <silent><leader>/ :nohls<CR>
+
+" F4 行号开关，方便鼠标复制代码
+function! ToggleNumber()
+  if(&relativenumber == &number)
+    set relativenumber! number!
+  elseif(&number)
+    set number!
+  else
+    set relativenumber!
+  endif
+  set number?
+endfunc
+nnoremap <F4> :call ToggleNumber()<CR>
+
 "Ctrl-a行首 Ctrl-e行尾
 noremap! <C-a> <Home>
 noremap! <C-e> <End>
@@ -390,7 +404,6 @@ endfunction
 
 "###############################################################################
 "一键编译运行
-nnoremap <F4> :w<CR>:make<CR>
 nnoremap <F5> :make<CR>
 nnoremap <F6> :make<CR>:!./%<.bin
 au FileType c setlocal cin mp=gcc\ %\ -o\ %<.bin\ -g
