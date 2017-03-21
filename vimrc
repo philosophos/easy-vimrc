@@ -119,8 +119,9 @@ filetype indent plugin on
 "set list                |"     ;_off                          ;显示 <Tab> 和 <EOL>
 "set showbreak=>\        |"sbr  ;""                            ;用于提示回绕行开始的字符串
  set textwidth=100       |"tw   ;0                             ;内容宽度
- set colorcolumn=+1      |"cc   ;""                         ;逗号分隔的屏幕列的列表
+ set colorcolumn=+1      |"cc   ;""                            ;逗号分隔的屏幕列的列表
 "setjoinspaces           |"js   ;on                            ;连接命令在句号之后加2(1)个空格
+ set formatoptions+=mBjl |"fo   ;vim:tcq                       ;描述自动排版如何进行的字母序列
 
 "search搜索
  set hlsearch            |"hls  ;off+extra_search              ;高亮最近的匹配搜索结果
