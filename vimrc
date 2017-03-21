@@ -261,6 +261,8 @@ nnoremap - zc
  noremap <leader><F1> :vert help 
 nnoremap <silent><leader>/ :nohls<CR>
 
+" F3 显示可打印字符开关
+nnoremap <F3> :set list! list?<CR>
 " F4 行号开关，方便鼠标复制代码
 function! ToggleNumber()
   if(&relativenumber == &number)
