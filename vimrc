@@ -261,6 +261,9 @@ nnoremap - zc
  noremap <leader><F1> :vert help 
 nnoremap <silent><leader>/ :nohls<CR>
 
+" w!! to sudo & write a file
+cmap w!! w !sudo tee >/dev/null %
+
 " F3 显示可打印字符开关
 nnoremap <F3> :set list! list?<CR>
 " F4 行号开关，方便鼠标复制代码
