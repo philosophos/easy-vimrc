@@ -99,7 +99,8 @@ filetype indent plugin on
  set diffopt=filler,vertical  |"dip   ;filler                    ;"diff 模式的设置选项
  set title                    |"      ;off+title                 ;让 Vim 设置窗口标题
 "set titlelen=80              |"      ;_85                       ;用于窗口标题的 'columns' 比例
-"set wildignore               |"wig   ;""+wildignore             ;匹配这些模式的文件不会参与自动补全
+"set completeopt=             |"cot   ;menu,preview              ;用于插入模式的补全
+ set wildignore=*.o,*~        |"wig   ;""+wildignore             ;匹配这些模式的文件不会参与自动补全
 "set wildignorecase           |"wic   ;off                       ;匹配文件名时忽略大小写
  set wildmenu                 |"wmnu  ;off+wildmenu              ;自动补全显示文件菜单
  set wildmode=list:full       |"wim   ;full                      ;
