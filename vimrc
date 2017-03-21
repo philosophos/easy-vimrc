@@ -262,6 +262,8 @@ nnoremap - zc
 nnoremap <silent><leader>/ :nohls<CR>
 
 map Y y$
+" 复制选中区到系统剪切板中
+vnoremap <leader>y "+y
 
 " w!! to sudo & write a file
 cmap w!! w !sudo tee >/dev/null %
