@@ -261,6 +261,8 @@ nnoremap - zc
  noremap <leader><F1> :vert help 
 nnoremap <silent><leader>/ :nohls<CR>
 
+map Y y$
+
 " w!! to sudo & write a file
 cmap w!! w !sudo tee >/dev/null %
 
