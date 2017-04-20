@@ -69,7 +69,7 @@ call plug#begin('~/.vim/plugins/')
  Plug 'tpope/vim-surround'                                   "| surround.vim: quoting/parenthesizing made simple
  Plug 'jiangmiao/auto-pairs'                                 "| Vim plugin, insert or delete brackets, parens, quotes in pair
  Plug 'matchit.zip'                                          "| extended % matching for HTML, LaTeX, and many other languages
- Plug 'Gcmt/wildfire.vim'                                    "| Smart selection of the closest text object
+ Plug 'gcmt/wildfire.vim'                                    "| Smart selection of the closest text object
 
 "undo&git
  Plug 'sjl/gundo.vim'                                        "| Visualize your undo tree.
@@ -97,83 +97,83 @@ call plug#begin('~/.vim/plugins/')
 "$ cd YouCompleteMe/
 "$ git submodule update --init --recursive           # 获取 YCM的依赖包
 "$ cd ..
-"Plug 'Valloric/YouCompleteMe.git'                     "| A code-completion engine for Vim基于语义的智能补全
+"Plug 'Valloric/YouCompleteMe.git'                        "| A code-completion engine for Vim基于语义的智能补全
 
 "C_&_C++
- Plug 'octol/vim-cpp-enhanced-highlight',{'for':'cpp'} "| Additional Vim syntax highlighting for C++ (including C++11/14)
- Plug 'OmniCppComplete',{'for':['c','cpp']}            "| C/C++ omni-completion with ctags database
- Plug 'derekwyatt/vim-fswitch',{'for':'cpp'}           "| Vim plug for switching between companion source files (e.g.'.h' and '.cpp')
- Plug 'derekwyatt/vim-protodef',{'for':'cpp'}          "| Vim plugin for pulling in C++ function prototypes into implementation files
- Plug 'echofunc.vim',{'for':['c','cpp']}               "| Echo the function declaration in the command line for C/C++.
+ Plug 'octol/vim-cpp-enhanced-highlight',{'for':'cpp'}    "| Additional Vim syntax highlighting for C++ (including C++11/14)
+ Plug 'OmniCppComplete',{'for':['c','cpp']}               "| C/C++ omni-completion with ctags database
+ Plug 'derekwyatt/vim-fswitch',{'for':'cpp'}              "| Vim plug for switching between companion source files (e.g.'.h' and '.cpp')
+ Plug 'derekwyatt/vim-protodef',{'for':'cpp'}             "| Vim plugin for pulling in C++ function prototypes into implementation files
+ Plug 'echofunc.vim',{'for':['c','cpp']}                  "| Echo the function declaration in the command line for C/C++.
 
 
 "MarkDown
- Plug 'Markdown',{'for':'markdown'}                    "| Syntax highlight for Markdown text files
-"Plug 'preview',{'for':'markdown'}                     "| Plugin for previewing markup files(markdown,rdoc,textile,html)
+ Plug 'Markdown',{'for':'markdown'}                       "| Syntax highlight for Markdown text files
+"Plug 'preview',{'for':'markdown'}                        "| Plugin for previewing markup files(markdown,rdoc,textile,html)
 "Plug 'markdown-preview.vim',{'for':'markdown'}
-"Plug 'plasticboy/vim-markdown',{'for':'markdown'}     "| Markdown Vim Mode
-"Plug 'instant-markdown',{'for':'markdown'}            "| Real-time Markdown previews from Vim!
+"Plug 'plasticboy/vim-markdown',{'for':'markdown'}        "| Markdown Vim Mode
+"Plug 'instant-markdown',{'for':'markdown'}               "| Real-time Markdown previews from Vim!
 "aptitude install npm ruby-pygments.rb ruby-redcarpet
 "npm -g install instant-markdown-d
-"Plug 'suan/vim-instant-markdown',{'for':'markdown'}   "| Instant Markdown previews from VIm!
+"Plug 'suan/vim-instant-markdown',{'for':'markdown'}      "| Instant Markdown previews from VIm!
 
 "TeX
- Plug 'TeX-9',{'for':'tex'}                            "| A semi-automatic LaTeX ftplugin with lots of firepower!
- Plug 'lervag/vimtex',{'for':'tex'}                    "| A modern vim plugin for editing LaTeX files.
- Plug 'xuhdev/vim-latex-live-preview',{'for':'tex'}    "| A Vim Plugin for Lively Previewing LaTeX PDF Output
+ Plug 'TeX-9',{'for':'tex'}                               "| A semi-automatic LaTeX ftplugin with lots of firepower!
+ Plug 'lervag/vimtex',{'for':'tex'}                       "| A modern vim plugin for editing LaTeX files.
+ Plug 'xuhdev/vim-latex-live-preview',{'for':'tex'}       "| A Vim Plugin for Lively Previewing LaTeX PDF Output
 
 "Java
- Plug 'artur-shaik/vim-javacomplete2',{'for':'java'}   "| Updata javacomplete plugin for vim
- Plug 'JavaBrowser',{'for':'java'}                     "| Shows java file class, package in a tree as in IDEs. Java source browser.
+ Plug 'artur-shaik/vim-javacomplete2',{'for':'java'}      "| Updata javacomplete plugin for vim
+ Plug 'JavaBrowser',{'for':'java'}                        "| Shows java file class, package in a tree as in IDEs. Java source browser.
 
 "Python
- Plug 'python_fold',{'for':'python'}                   "| Folding expression for python
- Plug 'Efficient-python-folding',{'for':'python'}      "| Fold python code nicely and toggle with one keystroke
- Plug 'pythoncomplete',{'for':'python'}                "| Python Omni Completion
- Plug 'Pydiction',{'for':'python'}                     "| Tab-complete your Python code
- Plug 'python.vim',{'for':'python'}                    "| A set of menus/shortcuts to work with Python files
+ Plug 'python_fold',{'for':'python'}                      "| Folding expression for python
+ Plug 'Efficient-python-folding',{'for':'python'}         "| Fold python code nicely and toggle with one keystroke
+ Plug 'pythoncomplete',{'for':'python'}                   "| Python Omni Completion
+ Plug 'Pydiction',{'for':'python'}                        "| Tab-complete your Python code
+ Plug 'python.vim',{'for':'python'}                       "| A set of menus/shortcuts to work with Python files
 "rope,ropemode,ropevim,
- Plug 'klen/python-mode',{'for':'python'}              "| Vim python-mode. PyLint, Rope, Pydoc, breakpoints from box.
-"Plug 'python-rope/ropevim',{'for':'python'}           "| vim mode that uses rope library to provide features like python refactorings and code-assists
-"Plug 'klen/rope-vim.git',{'for':'python'}             "| Pathogen compatable ropevim plugin.Dont need install rope libs in system.
- Plug 'hdima/python-syntax',{'for':'python'}           "| Python syntax highlighting script for Vim
- Plug 'hynek/vim-python-pep8-indent',{'for':'python'}  "| A nicer Python indentation style for vim.
- Plug 'pep8',{'for':'python'}                          "| Check your python source files with PEP8
-"Plug 'pyflakes.vim',{'for':'python'}                  "| PyFlakes on-the-fly Python code checking
-"Plug 'pyflakes',{'for':'python'}                      "| Vim filetype plugin for running pyflakes on Python files
+ Plug 'klen/python-mode',{'for':'python'}                 "| Vim python-mode. PyLint, Rope, Pydoc, breakpoints from box.
+"Plug 'python-rope/ropevim',{'for':'python'}              "| vim mode that uses rope library to provide features like python refactorings and code-assists
+"Plug 'klen/rope-vim.git',{'for':'python'}                "| Pathogen compatable ropevim plugin.Dont need install rope libs in system.
+ Plug 'hdima/python-syntax',{'for':'python'}              "| Python syntax highlighting script for Vim
+ Plug 'hynek/vim-python-pep8-indent',{'for':'python'}     "| A nicer Python indentation style for vim.
+ Plug 'pep8',{'for':'python'}                             "| Check your python source files with PEP8
+"Plug 'pyflakes.vim',{'for':'python'}                     "| PyFlakes on-the-fly Python code checking
+"Plug 'pyflakes',{'for':'python'}                         "| Vim filetype plugin for running pyflakes on Python files
 
 "Perl
- Plug 'perl-support.vim',{'for':'perl'}                "| Perl IDE -- Write and run Perl-scripts using menus and hotkeys.
+ Plug 'perl-support.vim',{'for':'perl'}                   "| Perl IDE -- Write and run Perl-scripts using menus and hotkeys.
 
 "php
- Plug 'phpcomplete.vim',{'for':'php'}                  "| php omnicomplete with extra support
- Plug 'pdv--phpdocumentor-for-vim',{'for':'php'}       "| provides really comfortable generation of phpdocumentor doc blocks for php4 & 5
+ Plug 'phpcomplete.vim',{'for':'php'}                     "| php omnicomplete with extra support
+ Plug 'pdv--phpdocumentor-for-vim',{'for':'php'}          "| provides really comfortable generation of phpdocumentor doc blocks for php4 & 5
 
 "go
- Plug 'fatih/vim-go'                                   "| Go development plugin for Vim https://patreon.com/fatih
+ Plug 'fatih/vim-go'                                      "| Go development plugin for Vim https://patreon.com/fatih
 
 "json
- Plug 'leshill/vim-json'                               "| Syntax highlighting for JSON in Vim
+ Plug 'leshill/vim-json'                                  "| Syntax highlighting for JSON in Vim
 
 "HTML
- Plug 'mattn/webapi-vim',{'for':'html'}                "| vim interface to Web API
- Plug 'tpope/vim-haml',{'for':'html'}                  "| Vim runtime files for Haml, Sass, and SCSS
- Plug 'mattn/emmet-vim',{'for':'html'}                 "| emmet for vim: http://emmet.io/
- Plug 'digitaltoad/vim-pug',{'for':'html'}             "| Vim Pug (formerly Jade) template engine syntax highlighting and indention
+ Plug 'mattn/webapi-vim',{'for':'html'}                   "| vim interface to Web API
+ Plug 'tpope/vim-haml',{'for':'html'}                     "| Vim runtime files for Haml, Sass, and SCSS
+ Plug 'mattn/emmet-vim',{'for':'html'}                    "| emmet for vim: http://emmet.io/
+ Plug 'digitaltoad/vim-pug',{'for':'html'}                "| Vim Pug (formerly Jade) template engine syntax highlighting and indention
 
 "CSS
- Plug 'groenewege/vim-less',{'for':'css'}              "| vim syntax for LESS (dynamic CSS)
- Plug 'skammer/vim-css-color',{'for':'css'}            "| Highlight colors in css files
- Plug 'wavded/vim-stylus',{'for':'css'}                "| Syntax Highlighting for Stylus
- Plug 'hail2u/vim-css3-syntax',{'for':'css'}           "| Add CSS3 syntax support to vim's built-in `syntax/css.vim`.
- Plug 'gorodinskiy/vim-coloresque',{'for':'css'}       "| css/less/sass/html color preview for vim
+ Plug 'groenewege/vim-less',{'for':'css'}                 "| vim syntax for LESS (dynamic CSS)
+ Plug 'skammer/vim-css-color',{'for':'css'}               "| Highlight colors in css files
+ Plug 'wavded/vim-stylus',{'for':'css'}                   "| Syntax Highlighting for Stylus
+ Plug 'hail2u/vim-css3-syntax',{'for':'css'}              "| Add CSS3 syntax support to vim's built-in `syntax/css.vim`.
+ Plug 'gorodinskiy/vim-coloresque',{'for':'css'}          "| css/less/sass/html color preview for vim
 
 "JavaScript
-"Plug 'javascript.vim',{'for':'javascript'}            "| JavaScript with ASP.NET support
- Plug 'pangloss/vim-javascript',{'for':'javascript'}   "| Vastly improved Javascript indentation and syntax support in Vim.
- Plug 'briancollins/vim-jst',{'for':'javascript'}      "| A vim plugin for highlighting and indenting JST/EJS syntax
- Plug 'kchmck/vim-coffee-script',{'for':'javascript'}  "| CoffeeScript support for vim
- Plug 'othree/javascript-libraries-syntax.vim'         "| Syntax for JavaScript libraries
- Plug 'othree/yajs.vim'                                "|
+"Plug 'javascript.vim',{'for':'javascript'}               "| JavaScript with ASP.NET support
+ Plug 'pangloss/vim-javascript',{'for':'javascript'}      "| Vastly improved Javascript indentation and syntax support in Vim.
+ Plug 'briancollins/vim-jst',{'for':'javascript,ejs,jst'} "| A vim plugin for highlighting and indenting JST/EJS syntax
+ Plug 'kchmck/vim-coffee-script',{'for':'javascript'}     "| CoffeeScript support for vim
+ Plug 'othree/javascript-libraries-syntax.vim'            "| Syntax for JavaScript libraries
+ Plug 'othree/yajs.vim'                                   "|
 "***********************************************************************************************************
 call plug#end()
