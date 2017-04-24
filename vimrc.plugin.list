@@ -150,10 +150,10 @@ call plug#begin('~/.vim/plugins/')
  Plug 'pdv--phpdocumentor-for-vim',{'for':'php'}          "| provides really comfortable generation of phpdocumentor doc blocks for php4 & 5
 
 "go
- Plug 'fatih/vim-go'                                      "| Go development plugin for Vim https://patreon.com/fatih
+ Plug 'fatih/vim-go',{'for':'go'}                         "| Go development plugin for Vim https://patreon.com/fatih
 
 "json
- Plug 'leshill/vim-json'                                  "| Syntax highlighting for JSON in Vim
+ Plug 'leshill/vim-json',{'for':'json'}                  "| Syntax highlighting for JSON in Vim
 
 "HTML
  Plug 'mattn/webapi-vim',{'for':'html'}                   "| vim interface to Web API
@@ -169,11 +169,12 @@ call plug#begin('~/.vim/plugins/')
  Plug 'gorodinskiy/vim-coloresque',{'for':'css'}          "| css/less/sass/html color preview for vim
 
 "JavaScript
-"Plug 'javascript.vim',{'for':'javascript'}               "| JavaScript with ASP.NET support
- Plug 'pangloss/vim-javascript',{'for':'javascript'}      "| Vastly improved Javascript indentation and syntax support in Vim.
- Plug 'briancollins/vim-jst',{'for':'javascript,ejs,jst'} "| A vim plugin for highlighting and indenting JST/EJS syntax
- Plug 'kchmck/vim-coffee-script',{'for':'javascript'}     "| CoffeeScript support for vim
- Plug 'othree/javascript-libraries-syntax.vim'            "| Syntax for JavaScript libraries
- Plug 'othree/yajs.vim'                                   "|
+"Plug 'javascript.vim',{'for':'javascript'}                         "| JavaScript with ASP.NET support
+ Plug 'pangloss/vim-javascript',{'for':'javascript'}                "| Vastly improved Javascript indentation and syntax support in Vim.
+"Plug 'briancollins/vim-jst',{'for':'javascript,ejs,jst'}           "| A vim plugin for highlighting and indenting JST/EJS syntax
+ Plug 'kchmck/vim-coffee-script',{'for':'javascript'}               "| CoffeeScript support for vim
+ Plug 'othree/javascript-libraries-syntax.vim',{'for':'javascript'} "| Syntax for JavaScript libraries
+"Plug 'othree/yajs.vim',{'for':'javascript'}                        "| YAJS.vim: Yet Another JavaScript Syntax for Vim
+ Plug 'jelera/vim-javascript-syntax',{'for':'javascript'}           "| Enhanced javascript syntax file for Vim
 "***********************************************************************************************************
 call plug#end()
