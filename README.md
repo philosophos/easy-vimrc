@@ -1,11 +1,11 @@
 ## 简介  
-此配置主要分为三个文件：
-vimrc -- 主配置
-vimrc.plugin.conf -- 插件列表
-vimrc.plugin.list -- 插件配置
-
+此配置主要分为三个文件：  
+vimrc -- 主配置  
+vimrc.plugin.list -- 插件列表  
+vimrc.plugin.conf -- 插件配置  
 配置文件结构清晰，开头处有目录，按 `*` 键跳转到目录对应的具体配置处，按`Ctrl+O`跳转回到目录。  
-**vimrc 目录列表**
+
+### vimrc 目录列表
 
     "file文件
     "history&undo历史&撤销
@@ -31,7 +31,7 @@ vimrc.plugin.list -- 插件配置
     " 一键编译运行
     " 环境保存
 
-**vimrc.plugin.list 目录列表**
+### vimrc.plugin.list 目录列表
 
     "colorschemes主题
     "view视图
@@ -55,7 +55,7 @@ vimrc.plugin.list -- 插件配置
     "CSS
     "JavaScript
 
-**vimrc.plugin.conf 目录列表**
+### vimrc.plugin.conf 目录列表
 
     "_gundo_undotree
     "_vim_indent_guides_缩进可视化
