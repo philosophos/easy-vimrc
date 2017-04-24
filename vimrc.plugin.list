@@ -82,6 +82,7 @@ call plug#begin('~/.vim/plugins/')
  Plug 'scrooloose/nerdtree',{'on':'NERDTreeToggle'}          "| A tree explorer plugin for vim.
  Plug 'tpope/vim-dispatch'                                   "| dispatch.vim: asynchronous build and test dispatcher
  Plug 'joonty/vdebug'                                        "| Multi-language DBGP debugger client for VIM (PHP,Python,Perl,Ruby,,etc.)
+ Plug 'thinca/vim-quickrun'                                  "| Run commands quickly.
 
 "other_plugins
  Plug 'DrawIt'                                               "| Ascii drawing plugin: lines, ellipses, arrows, fills, and more! ASCII注释
