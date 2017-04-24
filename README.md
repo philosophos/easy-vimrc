@@ -127,7 +127,7 @@ solarized主题
 vim是肯定要有的，说说插件吧。  
   
 ctags ycm 可用包管理器(apt/aptitude/yum/dnf/pacman/yaourt)安装  
-[ctags/exuberant-ctags](http://ctags.sourceforge.net)       生成代码标签，支持41种语言  
+[ctags/universal-ctags](https://ctags.io/)       生成代码标签，支持84种语言  
 [YCM/YouCompleteMe](https://github.com/Valloric/YouCompleteMe)          语义补全  
   
 python模块可用pip安装  
