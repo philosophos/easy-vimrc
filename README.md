@@ -57,21 +57,22 @@ vimrc.plugin.list -- 插件配置
 
 **vimrc.plugin.conf 目录列表**
 
-    "gundo_undotree
-    "vim_indent_guides_缩进可视化
-    "fswitch_接口与实现快速切换
-    "wildfire_快速选中结对符内的文本
-    "tabular_快速对齐
-    "ctags_基于标签的代码导航
-    "YouCompleteMe_基于语义的代码导航
-    "tagbar_标签列表
-    "NERDTree_工程文件浏览
-    "ctrlsf_vim_工程内全局查找光标所在关键字
-    "替换函数
-    "UltiSnips_模板补全
-    "YouCompleteMe补全菜单
-    "由接口快速生成实现框架
-    "syntastic_语法检查
+    "_gundo_undotree
+    "_vim_indent_guides_缩进可视化
+    "_fswitch_接口与实现快速切换
+    "_wildfire_快速选中结对符内的文本
+    "_tabular_快速对齐
+    "_ctags_基于标签的代码导航
+    "_YouCompleteMe_基于语义的代码导航
+    "_tagbar_标签列表
+    "_NERDTree_工程文件浏览
+    "_ctrlsf_vim_工程内全局查找光标所在关键字
+    "_替换函数
+    "_UltiSnips_模板补全
+    "_YouCompleteMe补全菜单
+    "_由接口快速生成实现框架
+    "_syntastic_语法检查
+    "_quickrun_一键编译运行
 
 ## 插件管理  
 使用[vim-plug](https://github.com/junegunn/vim-plug)  
@@ -151,6 +152,23 @@ python模块可用pip安装
     <C-\> {file}                          左右分屏并在新窗口打开{file}  
     <leader><F1> :vert help               左右分屏并在新窗口打开help  
     <leader>/                             取消搜索结果高亮  
+    <Leader>ud                            调用 gundo 树
+    <leader>ss                            保存快捷键
+    <leader>rs                            恢复快捷键
+    <Leader>i                             开/关缩进可视化
+    <Leader>ch                            在*.cpp 和 *.h 间切换
+    <Leader>sch                           子窗口中显示 *.cpp 或 *.h
+    <S-Tab>                               快速对齐，:Tabularize
+    <Leader>tn                            正向遍历同名标签，速记：Tag Next
+    <Leader>tp                            反向遍历同名标签，速记：Tag Previous
+    <leader>jd                            跳转到声明处，速记：Jump to Declaration
+    <leader>je                            跳转到定义处，速记：Jump to dEfinition
+    <Leader>tb                            显示／隐藏标签列表子窗口，速记：Tag Bar
+    <Leader>fl                            显示／隐藏工程文件子窗口，速记：File List
+    <Leader>sp                            工程内全局查找光标所在关键字，速记：Search in Project
+    <leader>; <C-x><C-o>                  YCM 集成 OmniCppComplete补全引擎，设置其快捷键
+    <Leader>r <Plug>(quickrun)            一键编译运行
+    <F10> :QuickRun<CR>                   一键编译运行
 
 ### 光标移动  
 
