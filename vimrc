@@ -267,6 +267,13 @@ map Y y$
 " 复制选中区到系统剪切板中
 vnoremap <leader>y "+y
 
+" （可选）每次 yank 操作后自动触发
+augroup OscYankAuto
+    autocmd!
+    " 通过 execute 隔离管道符，并显式传递 v:event.regname
+    autocmd TextYankPost * if v:event.operator == 'y' |  execute 'OSCYankRegister ' . v:event.regname | endif
+augroup END
+
 " w!! to sudo & write a file
 cmap w!! w !sudo tee >/dev/null %
 

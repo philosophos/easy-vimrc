@@ -93,6 +93,7 @@ call plug#begin('~/.vim/plugins/')
  Plug 'lilydjwg/fcitx.vim'                                   "| keep and restore fcitx state when leaving/re-entering insert mode
  Plug 'ternjs/tern_for_vim'                                  "| Tern plugin for Vim
 
+ Plug 'ojroques/vim-oscyank'
 
 "************************************************************************************************************
 "$ cd YouCompleteMe/
